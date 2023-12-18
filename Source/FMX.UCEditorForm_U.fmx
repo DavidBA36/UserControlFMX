@@ -1,0 +1,2078 @@
+object UCEditorForm: TUCEditorForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 666
+  ClientWidth = 1007
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object PageControl: TTabControl
+    Align = Client
+    Size.Width = 1007.000000000000000000
+    Size.Height = 569.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      1007s
+      543s
+      1007s
+      543s
+      1007s
+      543s
+      1007s
+      543s
+      1007s
+      543s
+      1007s
+      543s
+      1007s
+      543s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 66.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Principal'
+      object GridPanelLayout1: TGridPanelLayout
+        Align = Client
+        Size.Width = 1007.000000000000000000
+        Size.Height = 543.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            SizeStyle = Absolute
+            Value = 150.000000000000000000
+          end
+          item
+            Value = 50.018308311973630000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 140.000000000000000000
+          end
+          item
+            Value = 49.981691688026360000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = Label1
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = edtApplicationID
+            Row = 0
+          end
+          item
+            Column = 0
+            ColumnSpan = 2
+            Control = ckAutoStart
+            Row = 1
+          end
+          item
+            Column = 0
+            ColumnSpan = 2
+            Control = ckValidationKey
+            Row = 2
+          end
+          item
+            Column = 0
+            Control = Label2
+            Row = 3
+          end
+          item
+            Column = 0
+            Control = Label3
+            Row = 4
+          end
+          item
+            Column = 0
+            Control = Label4
+            Row = 5
+          end
+          item
+            Column = 0
+            Control = Label5
+            Row = 6
+          end
+          item
+            Column = 0
+            Control = Label6
+            Row = 7
+          end
+          item
+            Column = 0
+            Control = Label7
+            Row = 8
+          end
+          item
+            Column = 2
+            Control = GroupBox1
+            Row = 0
+            RowSpan = 5
+          end
+          item
+            Column = 1
+            Control = edtTableRights
+            Row = 6
+          end
+          item
+            Column = 1
+            Control = edtTabelaPermissoesEX
+            Row = 7
+          end
+          item
+            Column = 1
+            Control = cbCriptografia
+            Row = 3
+          end
+          item
+            Column = 1
+            Control = edtTableUsers
+            Row = 8
+          end
+          item
+            Column = 1
+            Control = cbLoginMode
+            Row = 5
+          end
+          item
+            Column = 0
+            ColumnSpan = 2
+            Control = btnTabelasPadrao
+            Row = 9
+          end
+          item
+            Column = 1
+            Control = spedtEncryptKey
+            Row = 4
+          end
+          item
+            Column = 3
+            Control = ImageControl1
+            Row = 1
+            RowSpan = 6
+          end
+          item
+            Column = 3
+            Control = Label8
+            Row = 0
+          end>
+        RowCollection = <
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 45.000000000000000000
+          end>
+        object Label1: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 144.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Identificacion Programa :'
+          TabOrder = 6
+        end
+        object Label2: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 144.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Criptografia :'
+          TabOrder = 5
+        end
+        object Label3: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 144.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Encrypt Key :'
+          TabOrder = 4
+        end
+        object Label4: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 144.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Login Mode :'
+          TabOrder = 3
+        end
+        object Label5: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 144.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Tabla de Permisos :'
+          TabOrder = 2
+        end
+        object Label6: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 144.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Tabla de Permisos EX :'
+          TabOrder = 1
+        end
+        object Label7: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 144.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Tabela de Usuarios/Perfis : '
+          TabOrder = 0
+        end
+        object GroupBox1: TGroupBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 134.000000000000000000
+          Size.Height = 154.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Not Allowed Items'
+          TabOrder = 7
+          object ckMenuVisible: TCheckBox
+            Align = Top
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 3.000000000000000000
+            Margins.Right = 3.000000000000000000
+            Margins.Bottom = 3.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 44.000000000000000000
+            Size.Width = 128.000000000000000000
+            Size.Height = 18.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 15
+            Text = 'Menu Visible'
+          end
+          object ckActionVisible: TCheckBox
+            Align = Top
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 3.000000000000000000
+            Margins.Bottom = 3.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 20.000000000000000000
+            Size.Width = 128.000000000000000000
+            Size.Height = 18.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 14
+            Text = 'Action Visible'
+          end
+        end
+        object edtApplicationID: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 11
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 352.631256103515600000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtTableRights: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 10
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 352.631256103515600000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtTabelaPermissoesEX: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 9
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 352.631256103515600000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          OnChange = edtTabelaPermissoesEXChange
+        end
+        object edtTableUsers: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 8
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 352.631256103515600000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object cbCriptografia: TComboBox
+          Align = Client
+          Items.Strings = (
+            'cPadrao'
+            'cMD5')
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 352.631256103515600000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 13
+        end
+        object cbLoginMode: TComboBox
+          Align = Client
+          Items.Strings = (
+            'lmActive'
+            'lmPassive')
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 352.631256103515600000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 12
+        end
+        object ckAutoStart: TCheckBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 502.631256103515600000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 15
+          Text = 'Iniciar Automaticamente'
+        end
+        object ckValidationKey: TCheckBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 502.631256103515600000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 14
+          Text = 'Check Validation Key'
+        end
+        object btnTabelasPadrao: TButton
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 502.631256103515600000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 16
+          Text = 'btnTabelasPadrao'
+          OnClick = btnTabelasPadraoClick
+        end
+        object spedtEncryptKey: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          Anchors = []
+          TabOrder = 17
+          Cursor = crIBeam
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 352.631256103515600000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object ImageControl1: TImageControl
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 352.368774414062500000
+          Size.Height = 186.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 18
+        end
+        object Label8: TLabel
+          Align = Client
+          Size.Width = 358.368774414062500000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Fondo'
+          TabOrder = 19
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 96.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Control Rights'
+      object GridPanelLayout3: TGridPanelLayout
+        Align = Client
+        Size.Width = 1007.000000000000000000
+        Size.Height = 543.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 50.004577497024630000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 130.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 250.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 49.995422502975370000
+          end>
+        ControlCollection = <
+          item
+            Column = 1
+            Control = Label10
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = Label11
+            Row = 2
+          end
+          item
+            Column = 1
+            Control = Label12
+            Row = 3
+          end
+          item
+            Column = 1
+            Control = Label13
+            Row = 4
+          end
+          item
+            Column = 2
+            Control = cbActionList
+            Row = 1
+          end
+          item
+            Column = 2
+            Control = cbActionManager
+            Row = 3
+          end
+          item
+            Column = 2
+            Control = cbMainMenu
+            Row = 4
+          end
+          item
+            Column = 2
+            Control = cbActionMainMenuBar
+            Row = 2
+          end
+          item
+            Column = 3
+            Control = Button1
+            Row = 1
+          end
+          item
+            Column = 3
+            Control = Button2
+            Row = 3
+          end
+          item
+            Column = 3
+            Control = Button3
+            Row = 4
+          end
+          item
+            Column = 3
+            Control = Button4
+            Row = 2
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object Label10: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'ActionList :'
+          TabOrder = 3
+        end
+        object Label11: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'ActionMainMenuBar :'
+          TabOrder = 2
+        end
+        object Label12: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'ActionManager :'
+          TabOrder = 1
+        end
+        object Label13: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'MainMenu :'
+          TabOrder = 0
+        end
+        object cbActionList: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          OnChange = cbComboRightsChange
+        end
+        object cbActionManager: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          OnChange = cbComboRightsChange
+        end
+        object cbMainMenu: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          OnChange = cbComboRightsChange
+        end
+        object cbActionMainMenuBar: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          OnChange = cbComboRightsChange
+        end
+        object Button1: TButton
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 26.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbutton'
+          TabOrder = 11
+          Text = 'Button1'
+          OnClick = Button1Click
+        end
+        object Button2: TButton
+          Tag = 2
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 26.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbutton'
+          TabOrder = 10
+          Text = 'Button1'
+          OnApplyStyleLookup = Button1Click
+        end
+        object Button3: TButton
+          Tag = 3
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 26.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbutton'
+          TabOrder = 9
+          Text = 'Button1'
+          OnApplyStyleLookup = Button1Click
+        end
+        object Button4: TButton
+          Tag = 1
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 26.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbutton'
+          TabOrder = 8
+          Text = 'Button1'
+          OnApplyStyleLookup = Button1Click
+        end
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 44.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'User'
+      object GridPanelLayout4: TGridPanelLayout
+        Align = Client
+        Size.Width = 1007.000000000000000000
+        Size.Height = 543.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 50.004577497024630000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 130.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 250.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 49.995422502975370000
+          end>
+        ControlCollection = <
+          item
+            Column = 1
+            Control = Label9
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = Label14
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = cbUserAction
+            Row = 1
+          end
+          item
+            Column = 2
+            Control = cbUserMenuItem
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = ckUserProtectAdministrator
+            Row = 3
+          end
+          item
+            Column = 2
+            Control = ckUserUsePrivilegedField
+            Row = 4
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object Label9: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Action:'
+          TabOrder = 1
+        end
+        object Label14: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Menu Item :'
+          TabOrder = 0
+        end
+        object cbUserAction: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          OnChange = ComboActionMenuItem
+        end
+        object cbUserMenuItem: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          OnChange = ComboActionMenuItem
+        end
+        object ckUserProtectAdministrator: TCheckBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'User Protect Administrator'
+        end
+        object ckUserUsePrivilegedField: TCheckBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = 'User Use Privileged Field'
+        end
+      end
+    end
+    object TabItem4: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 81.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'User Profile'
+      object GridPanelLayout5: TGridPanelLayout
+        Align = Client
+        Size.Width = 1007.000000000000000000
+        Size.Height = 543.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 50.004577497024630000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 130.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 250.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 49.995422502975370000
+          end>
+        ControlCollection = <
+          item
+            Column = 1
+            Control = Label15
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = Label16
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = cbUserProfileAction
+            Row = 1
+          end
+          item
+            Column = 2
+            Control = cbUserProfileMenuItem
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = ckUserProfileActive
+            Row = 3
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object Label15: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Action:'
+          TabOrder = 1
+        end
+        object Label16: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Menu Item :'
+          TabOrder = 0
+        end
+        object cbUserProfileAction: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          OnChange = ComboActionMenuItem
+        end
+        object cbUserProfileMenuItem: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          OnChange = ComboActionMenuItem
+        end
+        object ckUserProfileActive: TCheckBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Active'
+        end
+      end
+    end
+    object TabItem5: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 141.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'User Password Change'
+      object GridPanelLayout6: TGridPanelLayout
+        Align = Client
+        Size.Width = 1007.000000000000000000
+        Size.Height = 543.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 50.004577497024630000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 130.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 250.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 49.995422502975370000
+          end>
+        ControlCollection = <
+          item
+            Column = 1
+            Control = Label17
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = Label18
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = cbUserPasswordChangeAction
+            Row = 1
+          end
+          item
+            Column = 2
+            Control = cbUserPasswordChangeMenuItem
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = ckUserPassowrdChangeForcePassword
+            Row = 3
+          end
+          item
+            Column = 1
+            Control = Label19
+            Row = 4
+          end
+          item
+            Column = 2
+            Control = spedtUserPasswordChangeMinPasswordLength
+            Row = 4
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object Label17: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Action:'
+          TabOrder = 1
+        end
+        object Label18: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Menu Item :'
+          TabOrder = 0
+        end
+        object cbUserPasswordChangeAction: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+        end
+        object cbUserPasswordChangeMenuItem: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+        end
+        object ckUserPassowrdChangeForcePassword: TCheckBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Force Password'
+        end
+        object Label19: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 123.999984741210900000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Min Password Length :'
+          TabOrder = 5
+        end
+        object spedtUserPasswordChangeMinPasswordLength: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 6
+          Cursor = crIBeam
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object TabItem6: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 83.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Log Control'
+      object GridPanelLayout7: TGridPanelLayout
+        Align = Client
+        Size.Width = 1007.000000000000000000
+        Size.Height = 543.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 50.004577497024630000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 130.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 250.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 49.995422502975370000
+          end>
+        ControlCollection = <
+          item
+            Column = 1
+            Control = Label20
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = Label21
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = cbLogControlAction
+            Row = 1
+          end
+          item
+            Column = 2
+            Control = cbLogControlMenuItem
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = ckLogControlActive
+            Row = 4
+          end
+          item
+            Column = 1
+            Control = Label22
+            Row = 3
+          end
+          item
+            Column = 2
+            Control = edtLogControlTableLog
+            Row = 3
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object Label20: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Action:'
+          TabOrder = 2
+        end
+        object Label21: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 124.000015258789100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Menu Item :'
+          TabOrder = 1
+        end
+        object cbLogControlAction: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          OnChange = ComboActionMenuItem
+        end
+        object cbLogControlMenuItem: TComboBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          OnChange = ComboActionMenuItem
+        end
+        object ckLogControlActive: TCheckBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = 'Active'
+        end
+        object Label22: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 123.999984741210900000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Tabla de Logs:'
+          TabOrder = 0
+        end
+        object edtLogControlTableLog: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 6
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object TabItem7: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 50.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Login'
+      object GridPanelLayout2: TGridPanelLayout
+        Align = Top
+        Size.Width = 1007.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        ColumnCollection = <
+          item
+            Value = 25.008005101709600000
+          end
+          item
+            Value = 24.989503157089200000
+          end
+          item
+            Value = 24.998331248786980000
+          end
+          item
+            Value = 25.004160492414210000
+          end>
+        ControlCollection = <
+          item
+            Column = 1
+            Control = Label33
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = Label34
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = Label35
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = cbGetLoginName
+            Row = 1
+          end
+          item
+            Column = 2
+            Control = spedtMaxLoginAttempts
+            Row = 0
+          end
+          item
+            Column = 2
+            Control = ComboBox2
+            Row = 2
+          end>
+        RowCollection = <
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end>
+        object Label33: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 245.644302368164100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'N'#250'mero m'#225'ximo de Tentativas :'
+          TabOrder = 3
+        end
+        object Label34: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 245.644302368164100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Obtener Usuario'
+          TabOrder = 2
+        end
+        object Label35: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 245.644302368164100000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Modo de autenticaci'#243'n'
+          TabOrder = 1
+        end
+        object cbGetLoginName: TComboBox
+          Align = Client
+          Items.Strings = (
+            'lnNone'
+            'lnUserName'
+            'lnMachineName')
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 245.733215332031300000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+        end
+        object spedtMaxLoginAttempts: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 6
+          Cursor = crIBeam
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 245.733215332031300000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object ComboBox2: TComboBox
+          Align = Client
+          Items.Strings = (
+            'Interno'
+            'Windows')
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 245.733215332031300000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+        end
+      end
+      object GridPanelLayout8: TGridPanelLayout
+        Align = Client
+        Size.Width = 1007.000000000000000000
+        Size.Height = 316.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ColumnCollection = <
+          item
+            SizeStyle = Absolute
+            Value = 80.000000000000000000
+          end
+          item
+            Value = 50.001144400448600000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 80.000000000000000000
+          end
+          item
+            Value = 49.998855599551390000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            ColumnSpan = 2
+            Control = Label23
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = Label24
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = Label25
+            Row = 2
+          end
+          item
+            Column = 0
+            Control = Label26
+            Row = 3
+          end
+          item
+            Column = 0
+            Control = Label27
+            Row = 4
+          end
+          item
+            Column = 0
+            Control = Label28
+            Row = 5
+          end
+          item
+            Column = 0
+            Control = lblInitialRights
+            Row = 6
+          end
+          item
+            Column = 2
+            ColumnSpan = 2
+            Control = Label30
+            Row = 0
+          end
+          item
+            Column = 2
+            Control = Label31
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = edtInitialLoginAlias
+            Row = 1
+          end
+          item
+            Column = 3
+            Control = edtLoginAutoLoginUser
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = edtInitialLoginPassword
+            Row = 3
+          end
+          item
+            Column = 3
+            Control = edtLoginAutoLoginPassword
+            Row = 2
+          end
+          item
+            Column = 1
+            Control = edtInitialLoginGroupName
+            Row = 4
+          end
+          item
+            Column = 1
+            Control = edtInitialLoginEmail
+            Row = 5
+          end
+          item
+            Column = 1
+            Control = mmInitialRights
+            Row = 6
+          end
+          item
+            Column = 2
+            Control = Label32
+            Row = 2
+          end
+          item
+            Column = 1
+            Control = edtInitialLoginUser
+            Row = 2
+          end
+          item
+            Column = 2
+            ColumnSpan = 2
+            Control = ckLoginAutologinActive
+            Row = 3
+          end
+          item
+            Column = 2
+            ColumnSpan = 2
+            Control = ckLoginAutoLoginMessageOnError
+            Row = 4
+          end>
+        RowCollection = <
+          item
+            SizeStyle = Absolute
+            Value = 25.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            SizeStyle = Absolute
+            Value = 32.000000000000000000
+          end
+          item
+            Value = 100.000000000000000000
+          end>
+        object Label23: TLabel
+          Align = Client
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 490.509704589843800000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Login inicial'
+          TabOrder = 9
+        end
+        object Label24: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Alias:'
+          TabOrder = 8
+        end
+        object Label25: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Usuario:'
+          TabOrder = 7
+        end
+        object Label26: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Contrase'#241'a:'
+          TabOrder = 6
+        end
+        object Label27: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Grupo:'
+          TabOrder = 5
+        end
+        object Label28: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Email:'
+          TabOrder = 4
+        end
+        object lblInitialRights: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 125.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Permisos:'
+          TabOrder = 3
+        end
+        object Label30: TLabel
+          Align = Client
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 490.490295410156300000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Login Automatico:'
+          TabOrder = 2
+        end
+        object Label31: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Usuario:'
+          TabOrder = 1
+        end
+        object edtInitialLoginAlias: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 16
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 417.509704589843800000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtLoginAutoLoginUser: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 14
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 417.490295410156300000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtInitialLoginPassword: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 13
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 417.509704589843800000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtLoginAutoLoginPassword: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 12
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 417.490295410156300000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtInitialLoginGroupName: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 11
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 417.509704589843800000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtInitialLoginEmail: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 10
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 417.509704589843800000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object mmInitialRights: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          MaxLength = 3
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 417.509704589843800000
+          Size.Height = 125.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 17
+          Viewport.Width = 413.500000000000000000
+          Viewport.Height = 121.000000000000000000
+        end
+        object Label32: TLabel
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Contrase'#241'a'
+          TabOrder = 0
+        end
+        object edtInitialLoginUser: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 15
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 417.509704589843800000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object ckLoginAutologinActive: TCheckBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 497.490295410156300000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 18
+          Text = 'Activo'
+        end
+        object ckLoginAutoLoginMessageOnError: TCheckBox
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 497.490295410156300000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 19
+          Text = 
+            'Mostrar el mensaje predeterminado de error si se produce un erro' +
+            'r?'
+        end
+      end
+      object GridPanelLayout9: TGridPanelLayout
+        Align = Bottom
+        Position.Y = 413.000000000000000000
+        Size.Width = 1007.000000000000000000
+        Size.Height = 130.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            SizeStyle = Absolute
+            Value = 70.000000000000000000
+          end
+          item
+            Value = 100.000000000000000000
+          end
+          item
+          end
+          item
+          end
+          item
+          end
+          item
+          end
+          item
+          end
+          item
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = Button5
+            Row = 0
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object Button5: TButton
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 64.000000000000000000
+          Size.Height = 59.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Visualizar'
+          OnClick = Button5Click
+        end
+      end
+    end
+  end
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 1007.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object ActionList1: TActionList
+    Left = 88
+    Top = 561
+    object acVisualizarTelaLogin: TAction
+      Text = 'Visualizar Tela Login'
+    end
+    object acCarregarFigura: TAction
+      Text = 'Carregar Figura'
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 
+      'All (*.gif;*.png;*.jpg;*.jpeg;*.bmp;*.tif;*.tiff;*.ico;*.emf;*.w' +
+      'mf)|*.gif;*.png;*.jpg;*.jpeg;*.bmp;*.tif;*.tiff;*.ico;*.emf;*.wm' +
+      'f|GIF Image (*.gif)|*.gif|Portable Network Graphics (*.png)|*.pn' +
+      'g|JPEG Image File (*.jpg)|*.jpg|JPEG Image File (*.jpeg)|*.jpeg|' +
+      'Bitmaps (*.bmp)|*.bmp|TIFF Images (*.tif)|*.tif|TIFF Images (*.t' +
+      'iff)|*.tiff|Icons (*.ico)|*.ico|Enhanced Metafiles (*.emf)|*.emf' +
+      '|Metafiles (*.wmf)|*.wmf'
+    Left = 168
+    Top = 561
+  end
+end

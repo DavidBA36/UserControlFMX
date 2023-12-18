@@ -1,0 +1,74 @@
+object FSelectorColumas: TFSelectorColumas
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  BorderStyle = Single
+  Caption = 'Selector de columnas tabla:'
+  ClientHeight = 333
+  ClientWidth = 328
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Bottom
+    Position.Y = 288.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Button1: TButton
+      Align = Right
+      ModalResult = 1
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Position.X = 159.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Aceptar'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = Right
+      ModalResult = 2
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Position.X = 245.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Cancelar'
+      OnClick = Button2Click
+    end
+  end
+  object TMSFMXCheckGroup1: TTMSFMXCheckGroup
+    Align = Client
+    DisableFocusEffect = False
+    Margins.Left = 3.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    TabOrder = 1
+    Size.Width = 322.000000000000000000
+    Size.Height = 282.000000000000000000
+    Size.PlatformDefault = False
+    Columns = 2
+    Items = <>
+    Text = 'Marque las columnas visibles y  desmarque las ocultas'
+    Version = '1.0.2.5'
+    GroupCheckBoxType = ctToggleEnabled
+    Value = 0
+  end
+end
