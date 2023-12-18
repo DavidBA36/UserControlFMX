@@ -1,0 +1,38 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{db54d477-5fdc-4df2-8d4f-9ea1d372aaf4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="pckHistorico_XE6.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <BorlandProject>
+                <Default.Personality/>
+            </BorlandProject>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="pckHistorico_XE6">
+        <MSBuild Projects="pckHistorico_XE6.dproj"/>
+    </Target>
+    <Target Name="pckHistorico_XE6:Clean">
+        <MSBuild Projects="pckHistorico_XE6.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pckHistorico_XE6:Make">
+        <MSBuild Projects="pckHistorico_XE6.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="pckHistorico_XE6"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="pckHistorico_XE6:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="pckHistorico_XE6:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

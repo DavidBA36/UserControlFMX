@@ -1,0 +1,70 @@
+package UserControlFMX;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  designide,
+  dbrtl,
+  fmx,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon,
+  bindengine,
+  FireDACIBDriver,
+  bindcomp,
+  fmxFireDAC,
+  bindcompfmx,
+  TMSFMXPackPkgDXE12;
+
+contains
+  FMX.LoginWindow_U in '..\Source\FMX.LoginWindow_U.pas',
+  FMX.UCBase in '..\Source\FMX.UCBase.pas',
+  FMX.UCReg in '..\Source\FMX.UCReg.pas',
+  FMX.UcConsts_Language in '..\Source\FMX.UcConsts_Language.pas',
+  FMX.UCSettings in '..\Source\FMX.UCSettings.pas',
+  FMX.UCDataInfo in '..\Source\FMX.UCDataInfo.pas',
+  FMX.UCMessages in '..\Source\FMX.UCMessages.pas',
+  FMX.EventLog in '..\Source\FMX.EventLog.pas',
+  FMX.UCMail in '..\Source\FMX.UCMail.pas',
+  FMX.TrocaSenha_U in '..\Source\FMX.TrocaSenha_U.pas' {TrocaSenha},
+  FMX.UCEMailForm_U in '..\Source\FMX.UCEMailForm_U.pas' {UCEMailForm},
+  FMX.UCIdle in '..\Source\FMX.UCIdle.pas',
+  FMX.UCObjSel_U in '..\Source\FMX.UCObjSel_U.pas' {UCObjSel},
+  FMX.UCEditorForm_U in '..\Source\FMX.UCEditorForm_U.pas' {UCEditorForm},
+  FMX.pUCGeral in '..\Source\FMX.pUCGeral.pas' {FMXFormUserPerf},
+  FMX.pUCFrame_Ajustes in '..\Source\FMX.pUCFrame_Ajustes.pas' {Frame1: TFrame},
+  FMX.pUcFrame_Accesos in '..\Source\FMX.pUcFrame_Accesos.pas',
+  FMX.pUCFrame_Log in '..\Source\FMX.pUCFrame_Log.pas',
+  FMX.pUcFrame_Profile in '..\Source\FMX.pUcFrame_Profile.pas',
+  FMX.pUcFrame_User in '..\Source\FMX.pUcFrame_User.pas',
+  FMX.pUcFrame_UserLogged in '..\Source\FMX.pUcFrame_UserLogged.pas';
+
+end.
